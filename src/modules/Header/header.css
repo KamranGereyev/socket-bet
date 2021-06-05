@@ -1,0 +1,14 @@
+.wrapper {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(6, 6, 44, 0.774);
+}
+
+.wrapper-container {
+    height: 6%;
+    width: 98%;
+    display: flex;
+    background-color: rgba(13, 13, 87, 0.774);
+}

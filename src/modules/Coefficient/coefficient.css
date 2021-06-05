@@ -1,0 +1,22 @@
+.wrapper-container-coefficient {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.coefficient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 50%;
+    background: cornflowerblue;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: 
+     linear-gradient(to top right,transparent 85%,#8b1717 0) top right/30px 30px no-repeat,
+     cornflowerblue; 
+    color: white;
+    overflow: hidden;
+}

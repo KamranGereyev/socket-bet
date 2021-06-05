@@ -1,0 +1,7 @@
+.wrapper-container-goal {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}

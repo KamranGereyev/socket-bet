@@ -2,18 +2,18 @@ import React from "react";
 import "./goalInfo.css";
 
 const GoalInfo = props => {
-    const {goalNumberHome, goalNumberGuest} = props;
+    const {
+        liveStatistics
+    } = props;
+    
     return(
         <div className='wrapper-container-goal'>
-            <span>{goalNumberHome}</span>
-            <span>{goalNumberGuest}</span>
+        {
+            liveStatistics !== undefined ? <><span>{liveStatistics.homeScore}</span> <span>{liveStatistics.awayScore}</span></>: null
+        }
         </div>
     );
 };
 
-GoalInfo.defaultProps = {
-    goalNumberHome: 1,
-    goalNumberGuest: 0,
-}
 
 export default GoalInfo;

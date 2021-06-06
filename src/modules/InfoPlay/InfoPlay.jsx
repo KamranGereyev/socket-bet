@@ -14,9 +14,4 @@ const InfoPlay = props => {
     );
 };
 
-InfoPlay.defaultProps = {
-    numberPlay: 1205,
-    gameName: "futbol",
-}
-
 export default InfoPlay;

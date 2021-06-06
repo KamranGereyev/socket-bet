@@ -3,23 +3,16 @@ import "./coefficient.css";
 
 const Coefficient = props => {
     const {
-        winHome, 
-        draw, 
-        winGuest 
+        outComes
     } = props;
+
     return(
         <div className='wrapper-container-coefficient'>
-            <div className='coefficient'>{winHome}</div>
-            <div className='coefficient'>{draw}</div>
-            <div className='coefficient'>{winGuest}</div>
+        {
+           outComes !== undefined ? outComes.map(el => <div key={el.id} className= "coefficient">{el.odd}</div>) : null
+        }
         </div>
     );
 };
-
-Coefficient.defaultProps = {
-    winHome: 50.43,
-    draw: 20.12,
-    winGuest: 12.21,
-}
 
 export default Coefficient;

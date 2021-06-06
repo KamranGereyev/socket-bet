@@ -3,21 +3,17 @@ import "./teamInfo.css";
 
 const TeamInfo = props => {
     const {
-        halfTime, 
-        time
+        liveStatistic
     } = props;
+    
     return(
         <div className='wrapper-container-teams-info'>
-            <div>{halfTime}</div>
-            <div>{time}</div>
+        {
+            liveStatistic !== undefined ? <><div>{liveStatistic.period}</div> <div>{liveStatistic.eventTime}</div></>: null
+        }
         </div>
     );
 };
-
-TeamInfo.defaultProps = {
-    halfTime: "2h",
-    time: "78'"
-}
 
 
 export default TeamInfo;

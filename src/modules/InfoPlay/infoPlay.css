@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: cornflowerblue;
+    background-color: rgb(25, 25, 36);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 5px;
 }

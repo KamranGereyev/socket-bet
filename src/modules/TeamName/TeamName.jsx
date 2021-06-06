@@ -3,20 +3,16 @@ import "./teamName.css";
 
 const TeamName = props => {
     const { 
-        homeTeamName, 
-        guestTeamName
+        teams
     }= props;
+
     return(
         <div className='wrapper-container-teams'>
-            <span>{homeTeamName}</span>
-            <span>{guestTeamName}</span>
+        {
+            teams !== undefined ? <><span>{teams.home}</span> <span>{teams.away}</span></>: null
+        }
         </div>
     );
 };
-
-TeamName.defaultProps = {
-    homeTeamName: "FC Qarabag",
-    guestTeamName: "FC Neftci",
-}
 
 export default TeamName;

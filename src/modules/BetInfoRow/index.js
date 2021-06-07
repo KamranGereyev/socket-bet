@@ -1,7 +1,7 @@
-import Component from './Header';
+import Component from './BetInfoRow';
+import { connect } from 'react-redux';
 import * as actions from './actions.js';
 import * as selectors from './selectors.js';
-import { connect } from 'react-redux';
 
 const mapStateToProps = state => ({
     getData: selectors.onGetData(state)

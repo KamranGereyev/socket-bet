@@ -16,12 +16,12 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background: 
      linear-gradient(to top right,transparent 85%,#2cac7b 0) top right/30px 30px no-repeat,
-    rgb(25, 25, 36);; 
+    rgb(25, 25, 36);;
     color: white;
     overflow: hidden;
 }
 
-.coefficient-two {
+.coefficient-down {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,9 +29,9 @@
     height: 50%;
     background-color: rgb(25, 25, 36);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background: 
+    background:
      linear-gradient(to bottom right,transparent 85%,#8f1e1e 0) bottom right/30px 30px no-repeat,
-    rgb(25, 25, 36);; 
+   rgb(25, 25, 36);
     color: white;
     overflow: hidden;
 }

@@ -1,11 +1,12 @@
 import React from "react";
-import "./infoPlay.css";
+import "./infoPlay.scss";
 
 const InfoPlay = props => {
     const {
+        gameName,
         numberPlay, 
-        gameName
     } = props;
+    
     return(
         <div className='info-play'>
             <div className='number-play'>{numberPlay}</div>

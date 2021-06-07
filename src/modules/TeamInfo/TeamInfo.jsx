@@ -1,5 +1,5 @@
 import React from "react";
-import "./teamInfo.css";
+import "./teamInfo.scss";
 
 const TeamInfo = props => {
     const {
@@ -9,11 +9,16 @@ const TeamInfo = props => {
     return(
         <div className='wrapper-container-teams-info'>
         {
-            liveStatistic !== undefined ? <><div>{liveStatistic.period}</div> <div>{liveStatistic.eventTime}</div></>: null
+            liveStatistic !== undefined 
+            ? 
+            <>
+                <div>{liveStatistic.period}</div>
+                <div>{`${liveStatistic.eventTime}'`}</div>
+            </>
+            : null
         }
         </div>
     );
 };
-
 
 export default TeamInfo;

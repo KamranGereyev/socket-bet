@@ -1,5 +1,5 @@
 import React from "react";
-import "./coefficient.css";
+import "./coefficient.scss";
 
 const Coefficient = props => {
     const {
@@ -8,9 +8,16 @@ const Coefficient = props => {
 
     return(
         <div className='wrapper-container-coefficient'>
-        {
-           outComes !== undefined ? outComes.map(el => <div key={el.id} className= "coefficient">{el.odd}</div>) : null
-        }
+            {
+                outComes !== undefined 
+                ?
+                <>
+                    <div className={`${outComes[0].odd > 20 ? "coefficient" : "coefficient-down"}`}>{outComes[0].odd}</div>
+                    <div className={`${outComes[1].odd > 20 ? "coefficient" : "coefficient-down"}`}>{outComes[1].odd}</div>
+                    <div className={`${outComes[2].odd > 20 ? "coefficient" : "coefficient-down"}`}>{outComes[2].odd}</div>
+                </>
+                : null
+            }
         </div>
     );
 };

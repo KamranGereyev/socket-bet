@@ -9,13 +9,14 @@ import "./betInfoRow.scss";
 
 const BetInfoRow = props => {
     const { setData, getData } = props;
-    const ws = new WebSocket("ws://localhost:3002");
 
     useEffect(() => {
-        ws.addEventListener("message", function (e) {
-            setData(JSON.parse(e.data))//TODO look for api result
-            ws.send(JSON.stringify(getData))
-        }) 
+    const ws = new WebSocket("ws://localhost:3002");
+
+    ws.addEventListener("message", (e) => {
+        setData(JSON.parse(e.data))//TODO look for api result
+        ws.send(JSON.stringify(getData))
+    }) 
     }, [])
     
     return (

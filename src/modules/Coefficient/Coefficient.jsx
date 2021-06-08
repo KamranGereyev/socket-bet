@@ -11,11 +11,7 @@ const Coefficient = props => {
             {
                 outComes !== undefined 
                 ?
-                <>
-                    <div className={`${outComes[0].odd > 20 ? "coefficient" : "coefficient-down"}`}>{outComes[0].odd}</div>
-                    <div className={`${outComes[1].odd > 20 ? "coefficient" : "coefficient-down"}`}>{outComes[1].odd}</div>
-                    <div className={`${outComes[2].odd > 20 ? "coefficient" : "coefficient-down"}`}>{outComes[2].odd}</div>
-                </>
+                outComes.map(el => <div key={el.id} className={`${el.odd > 20 ? "coefficient" : "coefficient-down"}`}>{el.odd}</div>) 
                 : null
             }
         </div>
